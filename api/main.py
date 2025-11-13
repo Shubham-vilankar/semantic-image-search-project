@@ -99,5 +99,5 @@ def get_image(filename: str):
     image_path = IMAGES_DIR / filename
     if not image_path.exists():
         raise HTTPException(status_code=404, detail=f"Image not found: {filename}")
-
+#
     return FileResponse(image_path)
