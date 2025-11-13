@@ -116,7 +116,7 @@ if __name__ == "__main__":
     text_embeds = embed_text(queries)
     print("Text embeddings shape:", tuple(text_embeds.shape))
 
-    # Cosine similarity = dot product, since everything is L2-normalized
+    # #Cosine similarity = dot product, since everything is L2-normalized
     similarity = text_embeds @ image_embeds.T  # shape: (num_queries, num_images)
 
     print("\nTop match per query (sanity check of the shared embedding space):")
