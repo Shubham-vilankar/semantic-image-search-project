@@ -1,0 +1,24 @@
+# --- Core ML / embeddings ---
+torch>=2.2.0
+transformers>=4.40.0
+Pillow>=10.0.0
+
+# --- Vector database ---
+qdrant-client>=1.9.0
+
+# --- API backend ---
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9
+
+# --- UI ---
+streamlit>=1.35.0
+requests>=2.31.0
+
+# --- Utilities ---
+python-dotenv>=1.0.0
+numpy>=1.26.0
+tqdm>=4.66.0
+
+# Note: Step 9 (query rewriting) will use a free/local approach —
+# no paid API key required. Nothing to add here for that.
